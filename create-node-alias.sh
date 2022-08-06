@@ -1,0 +1,1 @@
+alias nodebox='docker run -it --rm --name node-run -v "$PWD":/usr/src/app -w /usr/src/app -p 8080:8080 node:13.13.0-alpine3.10 $@'
