@@ -1,0 +1,35 @@
+.board {
+    --board-size: 80vw; 
+    --dark-border: 1px solid black;
+    --light-border: 1px solid grey;
+    border: var(--dark-border);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: var(--board-size);
+}
+
+.box {
+    border: var(--dark-border);
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+}
+
+.boxRow {
+    display: flex;
+    height: calc(var(--board-size) / 9);
+}
+.boxRow0, .boxRow1 {
+    border-bottom: var(--light-border);
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(var(--board-size) / 9);
+}
+.cell0, .cell1 {
+    border-right: var(--light-border);
+}
