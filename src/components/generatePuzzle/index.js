@@ -32,6 +32,24 @@ const _addClue = (rows) => {
         const { rowIndex, cellIndex } = _getRandEmptyCell(rows);
         console.log(rowIndex, cellIndex)
         console.log(_getRandNumArr())
+
+
+
+
+
+        // Need to create a shuffled list of remaining cell coordinates
+        // Just iterate through that list until the correct amount of clues is added
+        // If no numbers from 1 to 9 are valid for a cell, the puzzle is impossible. 
+            // Need to handle that, if it happens. Shouldn't as long as the clue add function is working
+        // 
+
+
+
+
+
+
+
+
     }
 
     return rows;
