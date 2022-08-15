@@ -8,35 +8,9 @@ const Home = () => {
 	const [ boardRows, setBoardRows ] = useState([]);
 
 	useEffect(() => {
-		
-		
-		generatePuzzle();
-		
-		
-		setBoardRows([
-			[
-				{ value: '0' },
-				{ value: '0' },
-				{ value: '0' },
-				{ value: '0' },
-				{ value: '0' },
-				{ value: '0' },
-				{ value: '0' },
-				{ value: '0' },
-				{ value: '0' }
-			],
-			[
-				{ value: '0' },
-				{ value: '0' },
-				{ value: '0' },
-				{ value: '0' },
-				{ value: '0' },
-				{ value: '0' },
-				{ value: '0' },
-				{ value: '0' },
-				{ value: '0' }
-			]
-		])
+		setBoardRows(
+			generatePuzzle()
+		);
 	}, [])
 
 	return (
